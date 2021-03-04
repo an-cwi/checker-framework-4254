@@ -1,0 +1,19 @@
+plugins {
+  id 'java'
+  id 'org.checkerframework' version '0.5.17'
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compileOnly 'org.projectlombok:lombok:1.18.16'
+  annotationProcessor 'org.projectlombok:lombok:1.18.16'
+}
+
+checkerFramework {
+  checkers = [
+    'org.checkerframework.checker.nullness.NullnessChecker'
+  ]
+}

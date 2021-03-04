@@ -1,0 +1,1 @@
+# Sample for typetools/checker-framework#4254
